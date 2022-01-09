@@ -1,11 +1,16 @@
 package imperativeDeclarative;
 
 import java.util.List;
+import java.util.logging.Level;
 import java.util.stream.Collectors;
+import java.util.logging.Logger;
 
 public class MainClass {
 
-    public static void main(String... args) {
+    public static void main(String ...args) {
+
+        Logger LOGGER =
+                Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
         List<Person> persons = List.of(
                 new Person("Subhasish", "Ghosh", 30, Gender.MALE),
@@ -15,7 +20,7 @@ public class MainClass {
         // imperative approach
         for (Person person : persons) {
             if (person.gender == Gender.MALE) {
-                System.out.println(person);
+                LOGGER.log(Level.INFO, "{0}", person);
             }
         }
 
@@ -23,7 +28,7 @@ public class MainClass {
         persons.stream()
                 .filter(person -> person.gender == Gender.MALE)
                 .collect(Collectors.toList())
-                .forEach(System.out::println);
+                .forEach(item -> LOGGER.log(Level.INFO, "{0}", item));
 
     }
 }
