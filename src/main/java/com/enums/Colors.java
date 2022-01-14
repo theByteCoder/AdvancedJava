@@ -1,4 +1,4 @@
-package enums;
+package com.enums;
 
 public enum Colors {
     RED("red"), GREEN("green"), BLUE("blue");

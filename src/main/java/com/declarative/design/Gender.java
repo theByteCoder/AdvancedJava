@@ -1,4 +1,4 @@
-package imperative_declarative;
+package com.declarative.design;
 
 public enum Gender {
 

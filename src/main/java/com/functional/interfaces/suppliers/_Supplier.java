@@ -1,4 +1,4 @@
-package functional_interfaces.suppliers;
+package com.functional.interfaces.suppliers;
 
 import java.util.function.Supplier;
 
@@ -27,9 +27,7 @@ public class _Supplier {
 
     public static void main(String... args) {
         _Supplier supplier = new _Supplier(1, "Subhasish");
-        System.out.println("imperative approach " + supplier.supId);
-        System.out.println("imperative approach " + supplier.supName);
-        System.out.println("declarative approach " + supplier.supId);
-        System.out.println("declarative approach " + supplier.supName);
+        System.out.println(String.format("imperative approach id %s %s ", supplier.getSupId(), supplier.getSupName()));
+        System.out.println(String.format("declarative approach id %s %s ", supplier.getSupIdSupplier.get(), supplier.getSupNameSupplier.get()));
     }
 }

@@ -1,6 +1,6 @@
-package enums;
+package com.enums;
 
-public class MainClass {
+public class Main {
 
     public static void main(String args[]) {
         Colors color = Colors.RED;

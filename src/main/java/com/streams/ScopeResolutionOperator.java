@@ -1,3 +1,5 @@
+package com.streams;
+
 import java.util.List;
 
 public class ScopeResolutionOperator {

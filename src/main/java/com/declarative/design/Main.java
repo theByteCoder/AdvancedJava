@@ -1,11 +1,11 @@
-package imperative_declarative;
+package com.declarative.design;
 
 import java.util.List;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
 import java.util.logging.Logger;
 
-public class MainClass {
+public class Main {
 
     public static void main(String ...args) {
 
